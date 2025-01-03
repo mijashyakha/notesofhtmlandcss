@@ -1,0 +1,66 @@
+-HTML stands for hypertext mark up language which is the backbone of the web page.  structuring and 
+layouting is done with the help of html tags and attributes.
+
+html tags: 
+    <Doctype>: declaras  the document as html
+    <html>   : root element of html
+    <head>   : contains metadata and links 
+    metadata :  SEO related description
+    <body>   : contains main elements of page
+    <header> : defines heading section
+    <main>   : defines main contents of page
+    <footer> : defines the foot section of the page
+    <div>    : block container that contain contents
+    <a>      : defines a hyperlink, which is used to link from one page to another.
+    <span>   : inline container that contain contents
+    <h1>~<h6> tags  : defines the heading of page (<h1> defines the most important heading. <h6> defines the least important heading.)
+    <p>      :paragraph
+    <i>      : italic text
+    <b>      : bold text
+    <em>     : emphasis on text(italic)
+    <strong> : important(bold)
+    <u>      : underline
+    <sup>    :superscript ( eg:a²²+ b²)
+    <sub>    :subscript ( eg:H₂O )
+    <mark>   : highlight Text
+    <pre>    :preformat text
+    <table>  :defines table
+    <thead>  : defines table heading
+    <th>     : table heading
+    <tr>     :table row
+    <tbody> : defines the body of table
+    <td>    :table data
+    <colgroup>: column group
+    <ul>        : unordered list
+    <ol>        : ordered list
+    <li>        :list items
+    <input>     :input field
+    <label>     : label for input
+    <textarea>  :multilined input field
+    <button>    : button
+    <opt>       : option on Dropdown
+    <select>    :dropdown list
+    <img>       :embeds image
+    <video>     : embeds video
+    <iframe>    :embeds external links
+    <br>        : breaks line(** empty tag)
+    <hr>        : adds horizontal line (** empty tag)
+
+
+-- Attributes( gives more information about an HTML element)
+class           :specifies the class
+id              :specifies id
+draggable       :specifies whether the elements is draggable or novalidate
+lang            : specifies the language of html( language of the web page)
+Src             :screens  the image videos(source of resource)
+alt             :provides alternate text for image while the image is not loaded on the page(alternative text description of the image.)
+height:         :the height of the media of image and video
+width:          :the width of the media of image and video
+required        : required input ( compulsory to be filled, if empty, cannot be submitted)
+type            : describes the text type like number, text in input field
+name            : specifies the name of the content
+method          :Specifies the  method ie (get, post)
+placeholder     : used for providing hints inside the input field
+borders         : specifies the border on html on table
+colspan         : defines no of column span to be used
+rowspan         : defines no of row span to be Used

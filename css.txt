@@ -1,0 +1,148 @@
+**CSS**
+  CSS stand for cascading style sheets. It describes how the hmtl elements should randered on the screen. It helps in designing and layouting 
+  the web page by using various syntaxs such as font: 500px;, margin: 600px 400px;,etc.
+
+  Selectors:
+     *          : universal selector
+    elements    : elements selector
+      #         : id Selectors
+      .         : class selector
+     elements,elements: selects the muntiple Elements 
+     elements> elements: selects the child elements of the given element
+
+
+background:
+    background-color: sets the background color of an element
+    background-image:  sets the image as background of elements
+    background-repeat: sets whether the backgroung of the element is repetable or not 
+    background-position: sets the position of the image on background
+
+
+Borders:
+   border-style: specifies the type of the border( ie solid, dotted)
+   border-width: sets the width of the border
+   border-color: sets the color of the border
+     ** we can add different types of border on different side with the help of( border-(top, bottom, right, left) -style)
+   border-radius: used to make rounded corners of  the element.
+
+Margin:Margin is the space around the border of an element and controls the spacing between different elements.
+  margin: specifies margin on different side{ ( for top: margin-top, for bottom: margin-bottom )}
+  
+padding: Padding is the space between content and border.
+ padding: sets padding on different side{ ( for top: margin-top, for bottom: margin-bottom )}
+
+**text**
+ color: sets the color of the text
+ font-size: sets the font size of the text
+ font-family: sets the font-family of the text  (eg.Times New Roman', Times, serif)
+ text-decoration: decorates the text( text-decoration: underline red 5px;)
+ text-transform: specifies the uppercase and lowercase on the text
+ word-spacing: specifies the space between the words
+letter-spacing: specifies the space between the character of the text
+text-shadow: sets the shadow to the text( text-shadow: 5px 5px 5px red)
+
+**float**
+ this property   floats the elements.
+        (float:left)- floats elements towards left
+        (float:right)- floats elements towards right
+        float: none- default
+        float:inherit- float like the parent does
+ **clear**
+  this property clears the floating elements on the direction that is set to clear
+        clear:right- doesnot allow any element to float on its right
+        clear:left-  doesnot allow any element to float on its left      
+        clear:both- doesnot allow any element to float on its both side       
+       clear:none- default
+       clear: inherit- inherits the clear value as parent
+ 
+ **display**:         
+ sets how the elements shound be displayed on the screen( eg display: inline, inlineblock , block, grid, flex)
+   inline- displays element on inline 
+   block- display elemnts as block element
+   flex- displays elements as flex container
+   grid- displays elements as grid container( in a design we make different style with the help of row and column)
+   inline-block- creates the block elements in inline container.
+  
+**flex direction **
+      sets which direction the flex items
+        -row: arrange the flex item on main axis
+        -reverse row: vice versa of row
+        column: arrange the flex item on cross axis
+        reverse column: vice versa of column
+
+
+**grid**
+    -grid template row: specifies the numbers and width  of column
+    -grid templete column:specifies the numbers and height  of row
+    -grid row:specifies  grid row start and the grid row end
+    -grid column:specifies  grid column start and the grid column end
+    -row gap:specifies the gap betweeen two rows
+    -column gap:specifies the gap between two column
+    -gap: combination of grid row/column
+
+
+**position**
+specifies the position of an element
+  - static: it is positioned with normal flow of the page
+  - relative: positioned relative to normal position
+  -fixed: it always stays at the same place even if the page is scrolled
+  -absolute: positioned relative to the nearest position ancestor
+  -sticky : sticks to the given position when scroll 
+**overflow**
+       -visible: contents are rendered outside the element's box
+       -hidden: overflow are clipped and not displayed
+       -scroll: overflow are clipped and are scrollable
+       -auto: similar to the scroll
+
+** css Gradient**
+    displays smooth transition between two or more Colors
+    -linear Gradient
+    -radial Gradient
+    -Conic Gradient
+    
+    linear gradient:goes top/bottom left right( background-image: linear gradient ( to right/ left /bottm/ up red blue) )
+    radial Gradient:  sets circular or ellipse color gradient( background-image: radial gradient( none/ circle red blue))*  2color necessary
+    conic Gradient:  sets conical color gradient( background-image: conic gradient( yellow 10 deg, red 20deg, black 40deg) ) 3color necessary
+
+** 2D transform**
+    move rotates , scales and skews element
+     - translate( x axis y-axis): moves element from current position to by given parameter on x axis and y axis.
+     -rotate(40deg) - rotates the elements 
+     -scale(3,4)- increases or decreases the width(3) and height(4 ) of the given element(scale x: width, scale Y; height)
+     -Skew - slants the elements ( skewx(): slants on x axis, skewY(): slants on y axis )
+     matrix- combination of all 2D transformation {transform: matrix(scaleX(), skewY(), skewx(), scaleY(), translateX(), translateY())}
+
+
+**3D transform**
+    rotates element on x y and z axis
+   - rotateX() rotates elements on x axis 
+   -rotateY()rotates elements on Y axis
+   -rotateZ() rotates elements on Z axis
+
+**css transitions**
+   transition delay: delays the transistion effect for the given time at the initial of transition.
+   transition-duration:specifies period of transition effect takes to complete
+   transition-property: specifies the name of the css property the transition effect is for 
+   transition-timing- function: specifies the speed curve of the transition effect()
+          ease:  start slowly, then fast & end slowly
+          linear: same speed from start to end
+          ease-in: effects with a slow start
+          ease-out: effects with slow end
+          easee-in-out: effects with a slow starts and end( combination of ease-in/out)
+
+** animations**
+ animation-duration: Specifies the period to complete one animation cycle.
+ animation-direction: specifies whether an animations should be played forward backwards or in alternate
+ animation-name: specifies the name of animation
+ animation-delay: specifies how long the animation delays at the initial of animation
+ animation-literation-count: specifies the numbers of times an animation should be played
+
+
+
+
+**box sizing: border box;**
+          includes padding and borders while calcualting the height and width
+
+CSS Animation vs transition
+            css transition enables the smooth change between to state over a period of time. It requires to be triggred eg hover whereas Animation 
+            enables create complex sequences of animations involving multiple keyframes. It run automatically.
